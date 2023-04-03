@@ -37,7 +37,7 @@ function get($params) : ?array
 
 function getDB(array $params)
 {
-    $connection = new mysqli("hectorrdez.es", "u774699806_logadmin", "Cjde[w8$", "u774699806_scoutLog");
+    $connection = new mysqli("hectorrdez.es", "u774699806_logadmin", "", "u774699806_scoutLog");
     if(isset($params['method']) && $params['method'] == 'newMsg'){
         $insert = $connection->prepare("INSERT INTO `msg`(`author`,`text`) VALUES(?, ?)");
         $insert->bind_param("ss", $params['author'], $params['text']);
