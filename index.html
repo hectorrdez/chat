@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./resources/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <div class="main-content">
+            <div class="selected-chat">
+                <div class="chat-img">
+                    <img src="./resources/imgs/icono-grupo.jpg" alt="icono-grupo">
+                </div>
+                <div class="chat-data">
+                    <div class="chat-name">Los chungos</div>
+                </div>
+            </div>
             <div id="display-msg">
                 <div class="msg sended" id="msg0">
-                    
+                    <img src="./resources/imgs/loader.gif" alt="loading..">
                 </div>
             </div>
             <div class="send-message">
-                <input type="text" name="msg" id="msg">
-                <button class="send-msg"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                    <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
-                  </svg></button>
+                <input type="text" name="msg" id="msg" placeholder="Escribe un mensaje aquí">
             </div>
         </div>
     </main>
@@ -30,6 +38,7 @@
             <input type="text" name="user" id="user" placeholder="Nombre usuario">
         </div>
     </div>
-    <script src="src.js"></script>
+    <script src="./resources/src/app/src.js"></script>
 </body>
+
 </html>
